@@ -1,0 +1,666 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		274D18FE21011BB200FF9E16 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274D18FD21011BB200FF9E16 /* Utilities.swift */; };
+		274D19002101253000FF9E16 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274D18FF2101253000FF9E16 /* TabBarController.swift */; };
+		274D1902210129E200FF9E16 /* InsightsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274D1901210129E200FF9E16 /* InsightsViewController.swift */; };
+		3C3BD2D245C5377C173DACD5 /* Pods_GoGetter_Insights.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A986641E52934CBDF57B290F /* Pods_GoGetter_Insights.framework */; };
+		96016D6520DACFBF00143F8E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96016D6420DACFBF00143F8E /* AppDelegate.swift */; };
+		96016D6720DACFBF00143F8E /* InsightsTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96016D6620DACFBF00143F8E /* InsightsTabViewController.swift */; };
+		96016D6A20DACFBF00143F8E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96016D6820DACFBF00143F8E /* Main.storyboard */; };
+		96016D6C20DACFC000143F8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96016D6B20DACFC000143F8E /* Assets.xcassets */; };
+		96016D6F20DACFC000143F8E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96016D6D20DACFC000143F8E /* LaunchScreen.storyboard */; };
+		96016D7A20DACFC000143F8E /* GoGetter_InsightsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96016D7920DACFC000143F8E /* GoGetter_InsightsTests.swift */; };
+		96016D8520DAD1BF00143F8E /* InsightsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96016D8420DAD1BF00143F8E /* InsightsViewModel.swift */; };
+		960AFF0020E5A2B10071CF31 /* RevenueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960AFEFF20E5A2B10071CF31 /* RevenueViewController.swift */; };
+		960AFF0220E5A2C00071CF31 /* LeadsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960AFF0120E5A2C00071CF31 /* LeadsViewController.swift */; };
+		960AFF0420E5A2CC0071CF31 /* ClientsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960AFF0320E5A2CC0071CF31 /* ClientsViewController.swift */; };
+		960AFF0620E5A2ED0071CF31 /* SchedulingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960AFF0520E5A2ED0071CF31 /* SchedulingViewController.swift */; };
+		960AFF0820E5A30D0071CF31 /* GoalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960AFF0720E5A30D0071CF31 /* GoalsViewController.swift */; };
+		960AFF0A20E5BA110071CF31 /* ChartUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960AFF0920E5BA110071CF31 /* ChartUtils.swift */; };
+		962FE7A6210B8A7C0074BDE5 /* DateTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962FE7A5210B8A7C0074BDE5 /* DateTableViewController.swift */; };
+		9645B554210A5B9E0052F77A /* DateSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9645B553210A5B9E0052F77A /* DateSelectionViewController.swift */; };
+		9645B558210A7B050052F77A /* CustomTableHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9645B557210A7B050052F77A /* CustomTableHeader.xib */; };
+		9673769F20F7CCFA003D40D6 /* referralTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9673769E20F7CCFA003D40D6 /* referralTableViewCell.swift */; };
+		967376A120F9225C003D40D6 /* ToggleNamesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967376A020F9225C003D40D6 /* ToggleNamesViewController.swift */; };
+		967376A320FD1F06003D40D6 /* EventReferralsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967376A220FD1F06003D40D6 /* EventReferralsTableViewController.swift */; };
+		967376A520FD382E003D40D6 /* RatingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967376A420FD382E003D40D6 /* RatingTableViewController.swift */; };
+		967376A720FD3AC9003D40D6 /* RatingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967376A620FD3AC9003D40D6 /* RatingTableViewCell.swift */; };
+		967376A921015A4A003D40D6 /* SummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967376A821015A4A003D40D6 /* SummaryViewController.swift */; };
+		969ACE92211B948B0063D18A /* ToggleEventsViewControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969ACE91211B948B0063D18A /* ToggleEventsViewControllers.swift */; };
+		96D4201520DAD8C100386C1D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96D4201420DAD8C100386C1D /* Default-568h@2x.png */; };
+		96D67DBA21068B32001E1F03 /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D67DB921068B32001E1F03 /* DatePickerViewController.swift */; };
+		96D67DBC210693A0001E1F03 /* DateSettingsPopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D67DBB210693A0001E1F03 /* DateSettingsPopoverViewController.swift */; };
+		9F1E2363C0918CB440139948 /* Pods_GoGetter_InsightsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80BA738436B8A840396DBD3A /* Pods_GoGetter_InsightsTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		96016D7620DACFC000143F8E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 96016D5920DACFBE00143F8E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 96016D6020DACFBF00143F8E;
+			remoteInfo = "GoGetter Insights";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		130147C6E839E60437AA3246 /* Pods-GoGetter InsightsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoGetter InsightsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoGetter InsightsTests/Pods-GoGetter InsightsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		176898895C48E7640961ACE2 /* Pods-GoGetter Insights.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoGetter Insights.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoGetter Insights/Pods-GoGetter Insights.debug.xcconfig"; sourceTree = "<group>"; };
+		274D18FD21011BB200FF9E16 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		274D18FF2101253000FF9E16 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		274D1901210129E200FF9E16 /* InsightsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightsViewController.swift; sourceTree = "<group>"; };
+		80BA738436B8A840396DBD3A /* Pods_GoGetter_InsightsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoGetter_InsightsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		96016D6120DACFBF00143F8E /* GoGetter Insights.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GoGetter Insights.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		96016D6420DACFBF00143F8E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		96016D6620DACFBF00143F8E /* InsightsTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightsTabViewController.swift; sourceTree = "<group>"; };
+		96016D6920DACFBF00143F8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		96016D6B20DACFC000143F8E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		96016D6E20DACFC000143F8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		96016D7020DACFC000143F8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96016D7520DACFC000143F8E /* GoGetter InsightsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "GoGetter InsightsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		96016D7920DACFC000143F8E /* GoGetter_InsightsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoGetter_InsightsTests.swift; sourceTree = "<group>"; };
+		96016D7B20DACFC000143F8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96016D8420DAD1BF00143F8E /* InsightsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightsViewModel.swift; sourceTree = "<group>"; };
+		960AFEFF20E5A2B10071CF31 /* RevenueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevenueViewController.swift; sourceTree = "<group>"; };
+		960AFF0120E5A2C00071CF31 /* LeadsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeadsViewController.swift; sourceTree = "<group>"; };
+		960AFF0320E5A2CC0071CF31 /* ClientsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientsViewController.swift; sourceTree = "<group>"; };
+		960AFF0520E5A2ED0071CF31 /* SchedulingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulingViewController.swift; sourceTree = "<group>"; };
+		960AFF0720E5A30D0071CF31 /* GoalsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsViewController.swift; sourceTree = "<group>"; };
+		960AFF0920E5BA110071CF31 /* ChartUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartUtils.swift; sourceTree = "<group>"; };
+		962FE7A5210B8A7C0074BDE5 /* DateTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTableViewController.swift; sourceTree = "<group>"; };
+		9645B553210A5B9E0052F77A /* DateSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateSelectionViewController.swift; sourceTree = "<group>"; };
+		9645B557210A7B050052F77A /* CustomTableHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableHeader.xib; sourceTree = "<group>"; };
+		9673769E20F7CCFA003D40D6 /* referralTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = referralTableViewCell.swift; sourceTree = "<group>"; };
+		967376A020F9225C003D40D6 /* ToggleNamesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleNamesViewController.swift; sourceTree = "<group>"; };
+		967376A220FD1F06003D40D6 /* EventReferralsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventReferralsTableViewController.swift; sourceTree = "<group>"; };
+		967376A420FD382E003D40D6 /* RatingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingTableViewController.swift; sourceTree = "<group>"; };
+		967376A620FD3AC9003D40D6 /* RatingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingTableViewCell.swift; sourceTree = "<group>"; };
+		967376A821015A4A003D40D6 /* SummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryViewController.swift; sourceTree = "<group>"; };
+		969ACE91211B948B0063D18A /* ToggleEventsViewControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleEventsViewControllers.swift; sourceTree = "<group>"; };
+		96D4201420DAD8C100386C1D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		96D67DB921068B32001E1F03 /* DatePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
+		96D67DBB210693A0001E1F03 /* DateSettingsPopoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateSettingsPopoverViewController.swift; sourceTree = "<group>"; };
+		A986641E52934CBDF57B290F /* Pods_GoGetter_Insights.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoGetter_Insights.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F089BF76C683293887B3F092 /* Pods-GoGetter InsightsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoGetter InsightsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoGetter InsightsTests/Pods-GoGetter InsightsTests.release.xcconfig"; sourceTree = "<group>"; };
+		F87A957A7B0247B2BE2EC5A0 /* Pods-GoGetter Insights.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoGetter Insights.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoGetter Insights/Pods-GoGetter Insights.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		96016D5E20DACFBF00143F8E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C3BD2D245C5377C173DACD5 /* Pods_GoGetter_Insights.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96016D7220DACFC000143F8E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F1E2363C0918CB440139948 /* Pods_GoGetter_InsightsTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		22197C34ED592204C9420B75 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A986641E52934CBDF57B290F /* Pods_GoGetter_Insights.framework */,
+				80BA738436B8A840396DBD3A /* Pods_GoGetter_InsightsTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		96016D5820DACFBE00143F8E = {
+			isa = PBXGroup;
+			children = (
+				96D4201420DAD8C100386C1D /* Default-568h@2x.png */,
+				96016D6320DACFBF00143F8E /* GoGetter-Insights */,
+				96016D7820DACFC000143F8E /* GoGetter-InsightsTests */,
+				96016D6220DACFBF00143F8E /* Products */,
+				F49F2170214B5A60B020CAFC /* Pods */,
+				22197C34ED592204C9420B75 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		96016D6220DACFBF00143F8E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				96016D6120DACFBF00143F8E /* GoGetter Insights.app */,
+				96016D7520DACFC000143F8E /* GoGetter InsightsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		96016D6320DACFBF00143F8E /* GoGetter-Insights */ = {
+			isa = PBXGroup;
+			children = (
+				9645B557210A7B050052F77A /* CustomTableHeader.xib */,
+				274D18FD21011BB200FF9E16 /* Utilities.swift */,
+				96016D6420DACFBF00143F8E /* AppDelegate.swift */,
+				274D18FF2101253000FF9E16 /* TabBarController.swift */,
+				274D1901210129E200FF9E16 /* InsightsViewController.swift */,
+				96016D8420DAD1BF00143F8E /* InsightsViewModel.swift */,
+				96016D6620DACFBF00143F8E /* InsightsTabViewController.swift */,
+				96016D6820DACFBF00143F8E /* Main.storyboard */,
+				9673769E20F7CCFA003D40D6 /* referralTableViewCell.swift */,
+				967376A020F9225C003D40D6 /* ToggleNamesViewController.swift */,
+				967376A620FD3AC9003D40D6 /* RatingTableViewCell.swift */,
+				967376A821015A4A003D40D6 /* SummaryViewController.swift */,
+				96016D6B20DACFC000143F8E /* Assets.xcassets */,
+				967376A220FD1F06003D40D6 /* EventReferralsTableViewController.swift */,
+				967376A420FD382E003D40D6 /* RatingTableViewController.swift */,
+				960AFEFF20E5A2B10071CF31 /* RevenueViewController.swift */,
+				960AFF0120E5A2C00071CF31 /* LeadsViewController.swift */,
+				960AFF0320E5A2CC0071CF31 /* ClientsViewController.swift */,
+				960AFF0520E5A2ED0071CF31 /* SchedulingViewController.swift */,
+				960AFF0720E5A30D0071CF31 /* GoalsViewController.swift */,
+				960AFF0920E5BA110071CF31 /* ChartUtils.swift */,
+				96D67DB921068B32001E1F03 /* DatePickerViewController.swift */,
+				96016D6D20DACFC000143F8E /* LaunchScreen.storyboard */,
+				96D67DBB210693A0001E1F03 /* DateSettingsPopoverViewController.swift */,
+				9645B553210A5B9E0052F77A /* DateSelectionViewController.swift */,
+				962FE7A5210B8A7C0074BDE5 /* DateTableViewController.swift */,
+				969ACE91211B948B0063D18A /* ToggleEventsViewControllers.swift */,
+				96016D7020DACFC000143F8E /* Info.plist */,
+			);
+			path = "GoGetter-Insights";
+			sourceTree = "<group>";
+		};
+		96016D7820DACFC000143F8E /* GoGetter-InsightsTests */ = {
+			isa = PBXGroup;
+			children = (
+				96016D7920DACFC000143F8E /* GoGetter_InsightsTests.swift */,
+				96016D7B20DACFC000143F8E /* Info.plist */,
+			);
+			path = "GoGetter-InsightsTests";
+			sourceTree = "<group>";
+		};
+		F49F2170214B5A60B020CAFC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				176898895C48E7640961ACE2 /* Pods-GoGetter Insights.debug.xcconfig */,
+				F87A957A7B0247B2BE2EC5A0 /* Pods-GoGetter Insights.release.xcconfig */,
+				130147C6E839E60437AA3246 /* Pods-GoGetter InsightsTests.debug.xcconfig */,
+				F089BF76C683293887B3F092 /* Pods-GoGetter InsightsTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		96016D6020DACFBF00143F8E /* GoGetter Insights */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96016D7E20DACFC000143F8E /* Build configuration list for PBXNativeTarget "GoGetter Insights" */;
+			buildPhases = (
+				01BED3D4914E1D65D2C0A954 /* [CP] Check Pods Manifest.lock */,
+				96016D5D20DACFBF00143F8E /* Sources */,
+				96016D5E20DACFBF00143F8E /* Frameworks */,
+				96016D5F20DACFBF00143F8E /* Resources */,
+				C5275C82C1C99826149CF935 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "GoGetter Insights";
+			productName = "GoGetter Insights";
+			productReference = 96016D6120DACFBF00143F8E /* GoGetter Insights.app */;
+			productType = "com.apple.product-type.application";
+		};
+		96016D7420DACFC000143F8E /* GoGetter InsightsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96016D8120DACFC000143F8E /* Build configuration list for PBXNativeTarget "GoGetter InsightsTests" */;
+			buildPhases = (
+				E480D90245130BEC42934986 /* [CP] Check Pods Manifest.lock */,
+				96016D7120DACFC000143F8E /* Sources */,
+				96016D7220DACFC000143F8E /* Frameworks */,
+				96016D7320DACFC000143F8E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				96016D7720DACFC000143F8E /* PBXTargetDependency */,
+			);
+			name = "GoGetter InsightsTests";
+			productName = "GoGetter InsightsTests";
+			productReference = 96016D7520DACFC000143F8E /* GoGetter InsightsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		96016D5920DACFBE00143F8E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = GoGetter;
+				TargetAttributes = {
+					96016D6020DACFBF00143F8E = {
+						CreatedOnToolsVersion = 9.4;
+					};
+					96016D7420DACFC000143F8E = {
+						CreatedOnToolsVersion = 9.4;
+						TestTargetID = 96016D6020DACFBF00143F8E;
+					};
+				};
+			};
+			buildConfigurationList = 96016D5C20DACFBE00143F8E /* Build configuration list for PBXProject "GoGetter-Insights" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 96016D5820DACFBE00143F8E;
+			productRefGroup = 96016D6220DACFBF00143F8E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				96016D6020DACFBF00143F8E /* GoGetter Insights */,
+				96016D7420DACFC000143F8E /* GoGetter InsightsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		96016D5F20DACFBF00143F8E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96016D6F20DACFC000143F8E /* LaunchScreen.storyboard in Resources */,
+				96D4201520DAD8C100386C1D /* Default-568h@2x.png in Resources */,
+				96016D6C20DACFC000143F8E /* Assets.xcassets in Resources */,
+				9645B558210A7B050052F77A /* CustomTableHeader.xib in Resources */,
+				96016D6A20DACFBF00143F8E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96016D7320DACFC000143F8E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		01BED3D4914E1D65D2C0A954 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GoGetter Insights-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C5275C82C1C99826149CF935 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GoGetter Insights/Pods-GoGetter Insights-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+				"${BUILT_PRODUCTS_DIR}/HMSegmentedControl/HMSegmentedControl.framework",
+				"${BUILT_PRODUCTS_DIR}/MXPagerView/MXPagerView.framework",
+				"${BUILT_PRODUCTS_DIR}/MXParallaxHeader/MXParallaxHeader.framework",
+				"${BUILT_PRODUCTS_DIR}/MXSegmentedPager/MXSegmentedPager.framework",
+				"${BUILT_PRODUCTS_DIR}/UICountingLabel/UICountingLabel.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HMSegmentedControl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MXPagerView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MXParallaxHeader.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MXSegmentedPager.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UICountingLabel.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoGetter Insights/Pods-GoGetter Insights-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E480D90245130BEC42934986 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GoGetter InsightsTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		96016D5D20DACFBF00143F8E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96016D8520DAD1BF00143F8E /* InsightsViewModel.swift in Sources */,
+				9645B554210A5B9E0052F77A /* DateSelectionViewController.swift in Sources */,
+				274D19002101253000FF9E16 /* TabBarController.swift in Sources */,
+				967376A320FD1F06003D40D6 /* EventReferralsTableViewController.swift in Sources */,
+				960AFF0820E5A30D0071CF31 /* GoalsViewController.swift in Sources */,
+				962FE7A6210B8A7C0074BDE5 /* DateTableViewController.swift in Sources */,
+				274D18FE21011BB200FF9E16 /* Utilities.swift in Sources */,
+				96D67DBA21068B32001E1F03 /* DatePickerViewController.swift in Sources */,
+				96D67DBC210693A0001E1F03 /* DateSettingsPopoverViewController.swift in Sources */,
+				960AFF0220E5A2C00071CF31 /* LeadsViewController.swift in Sources */,
+				960AFF0620E5A2ED0071CF31 /* SchedulingViewController.swift in Sources */,
+				9673769F20F7CCFA003D40D6 /* referralTableViewCell.swift in Sources */,
+				967376A120F9225C003D40D6 /* ToggleNamesViewController.swift in Sources */,
+				274D1902210129E200FF9E16 /* InsightsViewController.swift in Sources */,
+				960AFF0A20E5BA110071CF31 /* ChartUtils.swift in Sources */,
+				960AFF0420E5A2CC0071CF31 /* ClientsViewController.swift in Sources */,
+				96016D6720DACFBF00143F8E /* InsightsTabViewController.swift in Sources */,
+				969ACE92211B948B0063D18A /* ToggleEventsViewControllers.swift in Sources */,
+				96016D6520DACFBF00143F8E /* AppDelegate.swift in Sources */,
+				967376A520FD382E003D40D6 /* RatingTableViewController.swift in Sources */,
+				967376A720FD3AC9003D40D6 /* RatingTableViewCell.swift in Sources */,
+				960AFF0020E5A2B10071CF31 /* RevenueViewController.swift in Sources */,
+				967376A921015A4A003D40D6 /* SummaryViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96016D7120DACFC000143F8E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96016D7A20DACFC000143F8E /* GoGetter_InsightsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		96016D7720DACFC000143F8E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 96016D6020DACFBF00143F8E /* GoGetter Insights */;
+			targetProxy = 96016D7620DACFC000143F8E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		96016D6820DACFBF00143F8E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				96016D6920DACFBF00143F8E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		96016D6D20DACFC000143F8E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				96016D6E20DACFC000143F8E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		96016D7C20DACFC000143F8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		96016D7D20DACFC000143F8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		96016D7F20DACFC000143F8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 176898895C48E7640961ACE2 /* Pods-GoGetter Insights.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RS4G7N7VG4;
+				INFOPLIST_FILE = "$(SRCROOT)/GoGetter-Insights/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.GoGetter-Insights";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		96016D8020DACFC000143F8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F87A957A7B0247B2BE2EC5A0 /* Pods-GoGetter Insights.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RS4G7N7VG4;
+				INFOPLIST_FILE = "$(SRCROOT)/GoGetter-Insights/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.GoGetter-Insights";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		96016D8220DACFC000143F8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 130147C6E839E60437AA3246 /* Pods-GoGetter InsightsTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "GoGetter InsightsTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.GoGetter-InsightsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GoGetter Insights.app/GoGetter Insights";
+			};
+			name = Debug;
+		};
+		96016D8320DACFC000143F8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F089BF76C683293887B3F092 /* Pods-GoGetter InsightsTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "GoGetter InsightsTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.GoGetter-InsightsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GoGetter Insights.app/GoGetter Insights";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		96016D5C20DACFBE00143F8E /* Build configuration list for PBXProject "GoGetter-Insights" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96016D7C20DACFC000143F8E /* Debug */,
+				96016D7D20DACFC000143F8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		96016D7E20DACFC000143F8E /* Build configuration list for PBXNativeTarget "GoGetter Insights" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96016D7F20DACFC000143F8E /* Debug */,
+				96016D8020DACFC000143F8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		96016D8120DACFC000143F8E /* Build configuration list for PBXNativeTarget "GoGetter InsightsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96016D8220DACFC000143F8E /* Debug */,
+				96016D8320DACFC000143F8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 96016D5920DACFBE00143F8E /* Project object */;
+}

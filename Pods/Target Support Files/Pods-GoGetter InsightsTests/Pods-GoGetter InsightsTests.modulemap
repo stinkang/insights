@@ -1,0 +1,6 @@
+framework module Pods_GoGetter_InsightsTests {
+  umbrella header "Pods-GoGetter InsightsTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="Kag-mJ-omX" customClass="CustomTableHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="30"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TMj-sQ-ga7">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="30"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SERVICE PROFESSIONAL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1nY-AB-1V5">
+                            <rect key="frame" x="8" y="4" width="312" height="22"/>
+                            <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="18"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.89019607840000003" green="0.94901960780000005" blue="0.99215686270000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="1nY-AB-1V5" firstAttribute="top" secondItem="TMj-sQ-ga7" secondAttribute="top" constant="4" id="AgM-fg-kai"/>
+                        <constraint firstItem="1nY-AB-1V5" firstAttribute="leading" secondItem="TMj-sQ-ga7" secondAttribute="leading" constant="8" id="Bjg-CS-gkt"/>
+                        <constraint firstAttribute="bottom" secondItem="1nY-AB-1V5" secondAttribute="bottom" constant="4" id="bee-A2-uON"/>
+                        <constraint firstAttribute="trailing" secondItem="1nY-AB-1V5" secondAttribute="trailing" id="rUZ-s6-33g"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="TMj-sQ-ga7" firstAttribute="top" secondItem="Lgs-yL-Xqb" secondAttribute="top" id="4d3-ru-Lgz"/>
+                <constraint firstItem="TMj-sQ-ga7" firstAttribute="leading" secondItem="Lgs-yL-Xqb" secondAttribute="leading" id="XKi-cL-yg5"/>
+                <constraint firstItem="TMj-sQ-ga7" firstAttribute="bottom" secondItem="Lgs-yL-Xqb" secondAttribute="bottom" id="kqG-kg-ZaR"/>
+                <constraint firstItem="TMj-sQ-ga7" firstAttribute="trailing" secondItem="Lgs-yL-Xqb" secondAttribute="trailing" id="yoe-j5-gI6"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="Lgs-yL-Xqb"/>
+            <connections>
+                <outlet property="headerLabel" destination="1nY-AB-1V5" id="leg-iD-QOl"/>
+                <outlet property="view" destination="TMj-sQ-ga7" id="48X-Ed-p3x"/>
+            </connections>
+            <point key="canvasLocation" x="394" y="322"/>
+        </view>
+    </objects>
+</document>
